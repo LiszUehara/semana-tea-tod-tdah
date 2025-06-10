@@ -1,5 +1,9 @@
 import type { Route } from "./+types/home";
-import { Header } from "../header/header";
+import Header from "../header/header";
+import Banner from "../banner/banner";
+import HeadlineVerticalLoop from "../headline/headline";
+import Carousel from "../carrossel/carousel";
+
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -9,5 +13,12 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Home() {
-  return <Header />;
+  return (
+    <>
+      <Header />
+      <Banner />
+      <HeadlineVerticalLoop/>
+      <Carousel />
+    </>
+  );
 }

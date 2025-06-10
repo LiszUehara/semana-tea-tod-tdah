@@ -13,8 +13,8 @@ export default function Header() {
               <button className="text-lg font-semibold text-color-white p-4 hover:bg-sky-700">Sobre</button>
               <button className="text-lg font-semibold text-color-white p-4 hover:bg-sky-700">Palestrantes</button>
               <button className="text-lg font-semibold text-color-white p-4 hover:bg-sky-700">FAQ</button>
-              <button className="btn p-4 hover:bg-sky-700 border-4 border-red-500 shadow-lg shadow-cyan-500/50 rounded-none">Login</button>
-              <button className="btn p-4 hover:bg-sky-700 border-4 border-red-900 shadow-lg shadow-cyan-500/50 rounded-none">Passaporte</button>
+              <button className="btn p-4 hover:bg-sky-700 border-4 bg-blue-900 shadow-lg shadow-cyan-500/50 rounded-none">Login</button>
+              <button className="btn p-4 hover:bg-sky-700 border-4 bg-blue-900 shadow-lg shadow-cyan-500/50 rounded-none">Passaporte</button>
             </div>
         </section>
    );
