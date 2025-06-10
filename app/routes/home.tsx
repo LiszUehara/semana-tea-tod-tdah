@@ -3,6 +3,7 @@ import Header from "../header/header";
 import Banner from "../banner/banner";
 import HeadlineVerticalLoop from "../headline/headline";
 import Carousel from "../carrossel/carousel";
+import Evento from "~/evento/evento";
 
 
 export function meta({}: Route.MetaArgs) {
@@ -19,6 +20,7 @@ export default function Home() {
       <Banner />
       <HeadlineVerticalLoop/>
       <Carousel />
+      <Evento />
     </>
   );
 }
