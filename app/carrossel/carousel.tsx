@@ -44,7 +44,7 @@ export default function CarouselCircular() {
       <h1 className="text-4xl font-bold text-white mb-8">Palestrantes</h1>
 
       <div className="relative flex items-center">
-        {/* Botão Esquerda */}
+  
         <button
           onClick={prevSlide}
           className="text-white text-4xl absolute left-[-50px]  transition"
@@ -70,7 +70,7 @@ export default function CarouselCircular() {
           ))}
         </div>
 
-        {/* Botão Direita */}
+        
         <button
           onClick={nextSlide}
           className="text-white text-4xl absolute right-[-50px] hover:scale-110 transition"
