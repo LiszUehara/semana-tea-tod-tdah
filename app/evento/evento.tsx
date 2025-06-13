@@ -22,7 +22,7 @@ export default function Evento() {
 
         <br />
         <br />
-        Prepare-se para <stronger>conectar saberes, ampliar visões e trocar experiências</stronger> com quem está na linha de frente do cuidado e da inclusão.
+        Prepare-se para <strong>conectar saberes, ampliar visões e trocar experiências</strong> com quem está na linha de frente do cuidado e da inclusão.
 
         <br />
         <br />
