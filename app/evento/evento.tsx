@@ -1,3 +1,5 @@
+import { Pin } from 'lucide-react';
+
 export default function Evento() {
   return (
     <section
@@ -9,19 +11,22 @@ export default function Evento() {
       </h1>
       
       <p className="text-lg text-black p-6 rounded-xl max-w-3xl leading-relaxed shadow-lg">
-        Durante 2 dias de evento presencial, mais de 20 especialistas estarão presentes para te mostrar quais são as novidades, atualizações e práticas na área do neurodesenvolvimento.
+        O <strong>I Congresso Caririense de Saúde Integrada (CCSI)</strong> será um espaço de encontro entre ciência, prática profissional e identidade regional, reunindo estudantes, especialistas e profissionais das áreas da <strong>saúde, educação e assistência social.</strong>
         <br />
         <br />
-        O Congresso Gaúcho foi criado para facilitar a acessibilidade de informações e de troca de experiência para a região que foi tão afetada no ano de 2024.
+        Com foco nos transtornos do neurodesenvolvimento — <strong>TDAH, TOD e TEA</strong> — o evento oferecerá palestras, rodas de conversa, oficinas práticas e mesas interdisciplinares que abordam desde os aspectos clínicos e pedagógicos até as políticas públicas e vivências familiares.
         <br />
         <br />
-        Um evento para todos que trabalham com crianças, adolescentes e adultos diagnosticados com Transtornos do neurodesenvolvimento, como TDAH, TOD e TEA.
+        📍 Realizado no coração do Cariri cearense, no coração do Cariri cearense, o CCSI 2025 também valoriza o território, a cultura local e os desafios específicos da nossa região, promovendo uma formação que vai além do conteúdo técnico: <strong>integra conhecimento, empatia e compromisso social.</strong>
+     
+
         <br />
         <br />
-        Todo profissional, estudante ou familiar que convive com alguém com Transtorno do Neurodesenvolvimento precisa estar atualizado com o que há de mais recente na área.
+        Prepare-se para <stronger>conectar saberes, ampliar visões e trocar experiências</stronger> com quem está na linha de frente do cuidado e da inclusão.
+
         <br />
         <br />
-        Este é o momento ideal para adquirir conhecimentos e práticas que realmente fazem a diferença, seja no cuidado com pessoas com esses transtornos ou no atendimento especializado a pacientes e alunos.
+       .
       </p>
     </section>
   );
