@@ -9,6 +9,11 @@ html, head, body{
   box-sizing: border-box;
 }
 
+body{
+  background-color: oklch(37.9% 0.146 265.522);
+  color: #333;
+}
+
 button{
   cursor: pointer;
   border: 0;

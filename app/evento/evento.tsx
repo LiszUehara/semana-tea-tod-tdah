@@ -7,7 +7,7 @@ export default function Evento() {
       className="flex flex-col items-start justify-center p-8 bg-cover bg-center min-h-screen"
     >
       <h1 className="text-5xl font-extrabold text-yellow-400 mb-6 drop-shadow-md">
-        O lugar que você precisa estar.
+        O que esperar do CCSI 2025?
       </h1>
       
       <p className="text-lg text-black p-6 rounded-xl max-w-3xl leading-relaxed shadow-lg">

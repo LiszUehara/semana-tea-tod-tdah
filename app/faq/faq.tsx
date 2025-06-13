@@ -31,8 +31,8 @@ export default function Faq() {
   return (
     <section >
 
-    <div className="max-w-3xl mx-auto my-16 px-6 py-8 bg-blue-850 shadow-xl rounded-2xl">
-      <h2 className="text-8xl font-extrabold text-black mb-2 drop-shadow-md text-center">
+    <div className="max-w-3xl mx-auto my-16 px-6 py-8 bg-blue-950 shadow-xl rounded-2xl border-amber-400 border-2">
+      <h2 className="text-8xl font-extrabold text-gray-100 mb-2 drop-shadow-md text-center">
         F.A.Q
       </h2>
       <p className="text-lg text-gray-400 mb-8 text-center">
@@ -41,22 +41,22 @@ export default function Faq() {
 
       <div className="space-y-4">
         {questions.map((question, index) => (
-          <div key={index} className="border rounded-lg shadow-sm">
+          <div key={index} className="border rounded-lg shadow-sm border-white overflow-hidden">
             <button
               onClick={() => toggle(index)}
-              className="flex items-center justify-between w-full px-4 py-3 font-medium text-left text-gray-800 hover:bg-blue-300 transition-all duration-200"
+              className="flex items-center justify-between w-full px-4 py-3 font-medium text-left text-white hover:bg-blue-300 hover:overflow-hidden transition-all duration-700"
             >
               {question}
               <span className="ml-4">
                 {openIndex === index ? (
-                  <Minus className="w-5 h-5 text-black" />
+                  <Minus className="w-5 h-5 text-white" />
                 ) : (
-                  <Plus className="w-5 h-5 text-gray-800" />
+                  <Plus className="w-5 h-5 text-white" />
                 )}
               </span>
             </button>
             {openIndex === index && (
-              <div className="px-4 pb-4 text-black-500">{answers[index]}</div>
+              <div className="px-4 text-gray-400 border-t pt-2 pb-2 bg-gradient-to-b from-blue-900 to-indigo-900 transition-all duration-700">{answers[index]}</div>
             )}
           </div>
         ))}

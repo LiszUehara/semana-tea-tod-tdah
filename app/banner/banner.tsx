@@ -15,8 +15,8 @@ export default function Banner() {
         />
 
         <h2 className="text-white text-3xl font-bold leading-snug">
-          Semana de
-          <span className="block text-yellow-400 text-3xl">TEA, TOD, TDAH</span>
+          l Congresso Caririense de Saúde Integrada
+          <span className="block text-yellow-400 text-3xl">TDAH, TOD e TEA 2025</span>
         </h2>
 
         <a
