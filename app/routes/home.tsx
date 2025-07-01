@@ -6,6 +6,11 @@ import Carousel from "../carrossel/carousel";
 import Evento from "~/evento/evento";
 import Faq from "~/faq/faq";
 import Footer from "~/footer/footer";
+import Lead from "~/leaders/lead";
+import Kit from "~/kit/kit";
+import Local from "~/local/local";
+
+
 
 
 export function meta({}: Route.MetaArgs) {
@@ -23,7 +28,11 @@ export default function Home() {
       <HeadlineVerticalLoop/>
       <Evento />
       <Carousel />
+      <Lead />
+      <Local/>
+      <Kit />
       <Faq />
+
       <Footer />
     </>
   );
