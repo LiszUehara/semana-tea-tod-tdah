@@ -5,7 +5,7 @@ export default function Faq() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const questions = [
-    "Posso comprar ingressos fora do site oficial do Congresso Gaúcho?",
+    "Posso comprar ingressos fora do site oficial do Congresso Caririense de Saude Integral?",
     "Como vou receber meu ingresso?",
     "É possível parcelar o valor do ingresso?",
     "Posso comprar mais de um ingresso?",
@@ -29,13 +29,13 @@ export default function Faq() {
   };
 
   return (
-    <section >
+    <section id="faq" className="bg-[#F2E6D8] py-1">
 
-    <div className="max-w-3xl mx-auto my-16 px-6 py-8 bg-blue-950 shadow-xl rounded-2xl border-amber-400 border-2">
+    <div className="max-w-3xl mx-auto my-16 px-6 py-8 bg-[#B98B67] shadow-xl rounded-2xl border-amber-400 border-2">
       <h2 className="text-8xl font-extrabold text-gray-100 mb-2 drop-shadow-md text-center">
         F.A.Q
       </h2>
-      <p className="text-lg text-gray-400 mb-8 text-center">
+      <p className="text-lg text-gray-300 mb-8 text-center">
         Perguntas Frequentes
       </p>
 
@@ -44,7 +44,7 @@ export default function Faq() {
           <div key={index} className="border rounded-lg shadow-sm border-white overflow-hidden">
             <button
               onClick={() => toggle(index)}
-              className="flex items-center justify-between w-full px-4 py-3 font-medium text-left text-white hover:bg-blue-300 hover:overflow-hidden transition-all duration-700"
+              className="flex items-center justify-between w-full px-4 py-3 font-medium text-left text-white hover:bg-[#996B47] hover:overflow-hidden transition-all duration-700"
             >
               {question}
               <span className="ml-4">
@@ -56,7 +56,7 @@ export default function Faq() {
               </span>
             </button>
             {openIndex === index && (
-              <div className="px-4 text-gray-400 border-t pt-2 pb-2 bg-gradient-to-b from-blue-900 to-indigo-900 transition-all duration-700">{answers[index]}</div>
+              <div className="px-4 text-gray-300 border-t pt-2 pb-2 bg-gradient-to-b from-[#B98B67] to-[#996B47] transition-all duration-700">{answers[index]}</div>
             )}
           </div>
         ))}
