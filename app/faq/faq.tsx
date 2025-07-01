@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Plus, Minus } from "lucide-react"; 
+import { Plus, Minus } from "lucide-react";
 
 export default function Faq() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -29,38 +29,46 @@ export default function Faq() {
   };
 
   return (
-    <section id="faq" className="bg-[#F2E6D8] py-1">
+    <section
+      id="faq"
+      className="py-20 bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: "url('/banners-fundo-CCSI_01.png')" }} // ajuste o caminho da imagem
+    >
+      <div className="max-w-3xl mx-auto px-6 py-10 rounded-2xl border border-white/30 backdrop-blur-md bg-white/10 shadow-2xl">
+        <h2 className="text-5xl md:text-6xl font-extrabold text-white mb-4 text-center drop-shadow-xl">
+          F.A.Q
+        </h2>
+        <p className="text-lg text-white/80 mb-10 text-center">
+          Perguntas Frequentes
+        </p>
 
-    <div className="max-w-3xl mx-auto my-16 px-6 py-8 bg-[#B98B67] shadow-xl rounded-2xl border-amber-400 border-2 ">
-      <h2 className="text-8xl font-extrabold text-gray-100 mb-2 drop-shadow-md text-center">
-        F.A.Q
-      </h2>
-      <p className="text-lg text-gray-300 mb-8 text-center">
-        Perguntas Frequentes
-      </p>
-
-      <div className="space-y-4">
-        {questions.map((question, index) => (
-          <div key={index} className="border rounded-lg shadow-sm border-white overflow-hidden">
-            <button
-              onClick={() => toggle(index)}
-              className="flex items-center justify-between w-full px-4 py-3 font-medium text-left text-white hover:bg-[#996B47] hover:overflow-hidden transition-all duration-700"
+        <div className="space-y-4">
+          {questions.map((question, index) => (
+            <div
+              key={index}
+              className="border border-white/20 rounded-lg overflow-hidden backdrop-blur-md bg-white/10"
             >
-              {question}
-              <span className="ml-4">
-                {openIndex === index ? (
-                  <Minus className="w-5 h-5 text-white" />
-                ) : (
-                  <Plus className="w-5 h-5 text-white" />
-                )}
-              </span>
-            </button>
-            {openIndex === index && (
-              <div className="px-4 text-gray-300 border-t pt-2 pb-2 bg-gradient-to-b from-[#B98B67] to-[#996B47] transition-all duration-700">{answers[index]}</div>
-            )}
-          </div>
-        ))}
-      </div>
+              <button
+                onClick={() => toggle(index)}
+                className="flex items-center justify-between w-full px-4 py-3 font-medium text-left text-white hover:bg-white/20 transition-all duration-300"
+              >
+                {question}
+                <span className="ml-4">
+                  {openIndex === index ? (
+                    <Minus className="w-5 h-5 text-white" />
+                  ) : (
+                    <Plus className="w-5 h-5 text-white" />
+                  )}
+                </span>
+              </button>
+              {openIndex === index && (
+                <div className="px-4 py-3 text-white/90 bg-white/5 backdrop-blur-sm border-t border-white/20 transition-all duration-300">
+                  {answers[index]}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
