@@ -2,14 +2,17 @@ import React from "react";
 
 export default function HeadlineHorizontalLoop() {
   return (
-    <div className="w-full h-10 overflow-hidden relative bg-stone-900">
-      <div className="absolute w-full h-full overflow-hidden">
-        <div className="flex animate-scrollLoop justify-center items-center whitespace-nowrap text-yellow-800 font-bold text-[25px]">
-          {Array(20).fill("Um evento especial").map((text, index) => (
-            <span key={index} className="mx-4 text-orange-400">{text}</span>
+    <div className="w-full min-h-[2.5rem] sm:min-h-[3rem] md:min-h-[3.5rem] bg-stone-900 flex items-center overflow-hidden">
+      <div className="flex animate-scrollLoop items-center whitespace-nowrap text-yellow-800 font-bold text-base sm:text-lg md:text-xl lg:text-2xl">
+        {Array(20)
+          .fill("UM EVENTO ESPECIAL")
+          .map((text, index) => (
+            <span key={index} className="mx-2 sm:mx-4 text-orange-400">
+              {text}
+            </span>
           ))}
-        </div>
       </div>
+
       <style>{`
         @keyframes scrollLoop {
           0% {
@@ -19,6 +22,7 @@ export default function HeadlineHorizontalLoop() {
             transform: translateX(-50%);
           }
         }
+
         .animate-scrollLoop {
           animation: scrollLoop 20s linear infinite;
         }
