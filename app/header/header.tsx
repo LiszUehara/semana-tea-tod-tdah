@@ -78,7 +78,7 @@ export default function Header() {
           >
             FAQ
           </button>
-          <button className="px-4 py-2 text-sm text-white px-3 hover:bg-yellow-900 bg-yellow-800 shadow-lg shadow-stone-500/50 rounded">
+          <button className="px-4 py-2 text-sm text-white hover:bg-yellow-900 bg-yellow-800 shadow-lg shadow-stone-500/50 rounded">
             INGRESSOS
           </button>
         </nav>
@@ -119,7 +119,7 @@ export default function Header() {
           >
             FAQ
           </button>
-          <button className="px-4 py-2 text-sm hover:bg-yellow-900 bg-yellow-800 shadow-lg rounded">
+          <button className="px-4 py-2 text-sm hover:bg-yellow-900 bg-orange-600 shadow-lg rounded">
             Ingressos
           </button>
         </div>
