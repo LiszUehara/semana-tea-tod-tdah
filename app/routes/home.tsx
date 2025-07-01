@@ -21,8 +21,8 @@ export default function Home() {
       <Header />
       <Banner />
       <HeadlineVerticalLoop/>
-      <Carousel />
       <Evento />
+      <Carousel />
       <Faq />
       <Footer />
     </>

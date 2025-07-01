@@ -99,7 +99,11 @@ export default function CarouselCircular() {
   const visiblePeople = getVisiblePeople();
 
   return (
-    <div id="speakers" className="w-full h-screen bg-[#F5D1A5] flex flex-col items-center justify-center relative overflow-hidden px-4 border-stone-400 border-2">
+    <div
+      id="speakers"
+      className="w-full h-screen bg-[#F5D1A5] flex flex-col items-center justify-center relative overflow-hidden px-4 border-stone-400 border-2"
+      style={{ backgroundImage: "url('/banners-fundo-CCSI_04.jpg')" }}
+    >
       <h2 className="text-black text-4xl font-bold mb-8">PALESTRANTES</h2>
 
       {/* Botão Anterior 

@@ -31,7 +31,7 @@ export default function Faq() {
   return (
     <section id="faq" className="bg-[#F2E6D8] py-1">
 
-    <div className="max-w-3xl mx-auto my-16 px-6 py-8 bg-[#B98B67] shadow-xl rounded-2xl border-amber-400 border-2">
+    <div className="max-w-3xl mx-auto my-16 px-6 py-8 bg-[#B98B67] shadow-xl rounded-2xl border-amber-400 border-2 ">
       <h2 className="text-8xl font-extrabold text-gray-100 mb-2 drop-shadow-md text-center">
         F.A.Q
       </h2>

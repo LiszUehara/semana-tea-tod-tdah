@@ -7,7 +7,7 @@ export default function Banner() {
         className="w-full h-160 object-cover"
       />
 
-      <div className="absolute top-1/3 left-100 transform -translate-y-1/2 bg-opacity-50 px-6 py-4 rounded-lg">
+      <div className="absolute top-1/2 left-100 transform -translate-y-1/2 bg-opacity-50 px-6 py-4 rounded-lg">
       </div>
     </section>
   );
