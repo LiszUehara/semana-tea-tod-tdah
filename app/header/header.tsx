@@ -56,30 +56,30 @@ export default function Header() {
         <nav className="hidden md:flex items-center gap-2">
           <button
             onClick={() => handleAnchor("banner")}
-            className="text-sm font-semibold text-white px-3 py-2 hover:bg-yellow-900 rounded"
+            className="text-sm font-semibold text-white px-3 py-2 hover:bg-orange-800 rounded"
           >
-            Home
+            HOME
           </button>
           <button
             onClick={() => handleAnchor("aboutus")}
-            className="text-sm font-semibold text-white px-3 py-2 hover:bg-yellow-900 rounded"
+            className="text-sm font-semibold text-white px-3 py-2 hover:bg-orange-800 rounded"
           >
-            Sobre
+            SOBRE
           </button>
           <button
             onClick={() => handleAnchor("speakers")}
-            className="text-sm font-semibold text-white px-3 py-2 hover:bg-yellow-900 rounded"
+            className="text-sm font-semibold text-white px-3 py-2 hover:bg-orange-800 rounded"
           >
-            Palestrantes
+            PALESTRANTES
           </button>
           <button
             onClick={() => handleAnchor("faq")}
-            className="text-sm font-semibold text-white px-3 py-2 hover:bg-yellow-900 rounded"
+            className="text-sm font-semibold text-white px-3 py-2  hover:bg-orange-800 rounded"
           >
             FAQ
           </button>
-          <button className="px-4 py-2 text-sm hover:bg-yellow-900 bg-yellow-800 shadow-lg shadow-stone-500/50 rounded">
-            Ingressos
+          <button className="px-4 py-2 text-sm text-white px-3 hover:bg-yellow-900 bg-yellow-800 shadow-lg shadow-stone-500/50 rounded">
+            INGRESSOS
           </button>
         </nav>
 
