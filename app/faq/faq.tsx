@@ -32,7 +32,7 @@ export default function Faq() {
     <section
       id="faq"
       className="py-20 bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: "url('/banners-fundo-CCSI_01.png')" }} // ajuste o caminho da imagem
+      style={{ backgroundImage: "url('/images/bg-site_06.jpg')" }} 
     >
       <div className="max-w-3xl mx-auto px-6 py-10 rounded-2xl border border-white/30 backdrop-blur-md bg-white/10 shadow-2xl">
         <h2 className="text-5xl md:text-6xl font-extrabold text-white mb-4 text-center drop-shadow-xl">

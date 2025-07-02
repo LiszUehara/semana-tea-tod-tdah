@@ -3,7 +3,7 @@ export default function Local() {
     <section
       id="local"
       className="flex flex-col md:flex-row items-center justify-center gap-2 min-h-screen px-4 py-6 bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: "url('/images/bg-site_01.jpg')" }}
+      style={{ backgroundImage: "url('/images/bg-site_04.jpg')" }}
     >
       {/* Imagem */}
       <div className="w-full md:w-1/2 flex justify-center">

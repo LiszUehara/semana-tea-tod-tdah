@@ -25,7 +25,7 @@ export default function Kit() {
   return (
     <section
       className="flex flex-col items-center justify-center min-h-screen bg-cover bg-center bg-no-repeat py-16 px-4"
-      style={{ backgroundImage: "url('/images/bg-site_03.jpg')" }}
+      style={{ backgroundImage: "url('/images/bg-site_05.png')" }}
     >
       <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-12 text-white drop-shadow-lg tracking-wide font-arsenica">
         CONFIRA AS OPÇÕES
