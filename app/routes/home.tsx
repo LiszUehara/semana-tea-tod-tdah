@@ -3,6 +3,7 @@ import Header from "../header/header";
 import Banner from "../banner/banner";
 import HeadlineVerticalLoop from "../headline/headline";
 import Carousel from "../carrossel/carousel";
+
 import Evento from "~/evento/evento";
 import Faq from "~/faq/faq";
 import Footer from "~/footer/footer";
@@ -29,6 +30,7 @@ export default function Home() {
       <HeadlineVerticalLoop/>
       <Evento />
       <Carousel />
+      <Agenda />
       <Lead />
       <Local/>
       <Kit />

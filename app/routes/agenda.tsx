@@ -8,7 +8,7 @@ export default function AgendaPage() {
       <main
         className="min-h-[60vh] flex flex-col items-center justify-center py-12 px-4"
         style={{
-          backgroundImage: "url('/banners-fundo-CCSI_04.jpg')",
+          backgroundImage: "url('/images/bg-site_03.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -88,7 +88,7 @@ export default function AgendaPage() {
           </div>
         </div>
       </main>
-      <Footer />
+      
     </>
   );
 }

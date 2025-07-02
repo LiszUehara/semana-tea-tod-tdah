@@ -2,11 +2,11 @@ export default function Local() {
   return (
     <section
       id="local"
-      className="flex flex-col md:flex-row items-center justify-center gap-2 min-h-screen px-4 py-6 bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: "url('/images/bg-site_04.jpg')" }}
+      className="flex flex-col md:flex-row items-center justify-center gap-8 min-h-screen px-4 py-6 bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: "url('/images/bg-site_05.png')" }}
     >
       {/* Imagem */}
-      <div className="w-full md:w-1/2 flex justify-center">
+      <div className="w-full md:w-1/2 flex justify-center items-center">
         <img
           src="/local.webp"
           alt="Local do evento"
@@ -15,7 +15,7 @@ export default function Local() {
       </div>
 
       {/* Informações */}
-      <div className="w-full md:w-1/2 text-center md:text-left space-y-1">
+      <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start text-center md:text-left space-y-3">
         <h1 className="text-3xl font-bold text-white drop-shadow">
           CENTRO DE CONVENÇÕES DO CARIRI
         </h1>
