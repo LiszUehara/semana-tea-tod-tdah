@@ -19,7 +19,14 @@ export default function Participante() {
   return (
     <>
       <Header />
-      <main className="min-h-[80vh] flex items-center justify-center bg-gradient-to-br from-[#F2E6D8] via-[#FCCD9A] to-[#5F4235] py-12 px-4">
+      <main
+        className="min-h-[80vh] flex items-center justify-center bg-gradient-to-br from-[#F2E6D8] via-[#FCCD9A] to-[#5F4235] py-12 px-4"
+        style={{
+          backgroundImage: "url('/banners-fundo-CCSI_04.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
         <div className="bg-white/80 rounded-2xl shadow-2xl flex flex-col md:flex-row items-center max-w-4xl w-full p-8 gap-8 border border-[#FCCD9A] backdrop-blur-md">
           <div className="flex-shrink-0 flex flex-col items-center">
             <img
