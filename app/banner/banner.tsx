@@ -2,7 +2,7 @@ export default function Banner() {
   return (
     <section className="relative w-full" id="banner">
       <img
-        src="/public/bannersite.png"
+        src="/bannersite.png"
         alt="Banner"
         className="w-full h-160 object-cover"
       />
