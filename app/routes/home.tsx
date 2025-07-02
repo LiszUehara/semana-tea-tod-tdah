@@ -9,6 +9,7 @@ import Footer from "~/footer/footer";
 import Lead from "~/leaders/lead";
 import Kit from "~/kit/kit";
 import Local from "~/local/local";
+import Agenda from "./agenda";
 
 
 
@@ -32,7 +33,6 @@ export default function Home() {
       <Local/>
       <Kit />
       <Faq />
-
       <Footer />
     </>
   );

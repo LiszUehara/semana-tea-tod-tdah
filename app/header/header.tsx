@@ -78,7 +78,10 @@ export default function Header() {
           >
             FAQ
           </button>
-          <button className="px-4 py-2 text-sm text-white hover:bg-yellow-900 bg-yellow-800 shadow-lg shadow-stone-500/50 rounded">
+          <button
+            className="px-4 py-2 text-sm text-white hover:bg-yellow-900 bg-orange-600 shadow-lg rounded"
+            onClick={() => navigate("/ingressos")}
+          >
             INGRESSOS
           </button>
         </nav>
@@ -119,7 +122,13 @@ export default function Header() {
           >
             FAQ
           </button>
-          <button className="px-4 py-2 text-sm hover:bg-yellow-900 bg-orange-600 shadow-lg rounded">
+          <button
+            className="px-4 py-2 text-sm text-orange-600 bg-white hover:bg-yellow-900 shadow-lg rounded"
+            onClick={() => {
+              setMenuOpen(false);
+              navigate("/ingressos");
+            }}
+          >
             Ingressos
           </button>
         </div>

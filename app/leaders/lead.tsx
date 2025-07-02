@@ -9,7 +9,7 @@ export default function Lead() {
         />
 
         <a
-          href="https://wa.me/5588994377675"
+          href="https://wa.me/55889999139972"
           target="_blank"
           rel="noopener noreferrer"
           className="block w-full text-center bg-orange-600 hover:bg-orange-700 text-white text-lg font-semibold py-3 rounded-md transition-all duration-300"
