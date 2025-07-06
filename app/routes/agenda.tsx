@@ -37,6 +37,7 @@ export default function AgendaPage() {
             <div className="flex items-center gap-2">
               <span className="relative shrink-0 overflow-hidden w-10 h-10 rounded-full flex justify-center border border-gray-50 bg-white">
                 <img
+                  loading="lazy"
                   className="aspect-square h-full w-full object-cover"
                   alt="Leonardo Leitão"
                   src="https://frontendday.descompliqueapps.com.br/2024/wp-content/uploads/2024/06/1-240x300.png"
@@ -75,6 +76,7 @@ export default function AgendaPage() {
             <div className="flex items-center gap-2">
               <span className="relative shrink-0 overflow-hidden w-10 h-10 rounded-full flex justify-center border border-gray-50 bg-white">
                 <img
+                  loading="lazy"
                   className="aspect-square h-full w-full object-cover"
                   alt="Antony Lemos"
                   src="https://frontendday.descompliqueapps.com.br/2024/wp-content/uploads/2025/06/IMG_7864-Antony-Lemos-300x277.jpg"

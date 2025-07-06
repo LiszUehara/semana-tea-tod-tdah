@@ -48,6 +48,7 @@ export default function Header() {
               src="/LogoSimbolo.png"
               alt="Logo do CCSI 2025"
               className="h-10 w-auto"
+              loading="lazy"
             />
           )}
         </button>

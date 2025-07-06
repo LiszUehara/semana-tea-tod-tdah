@@ -20,6 +20,7 @@ const Footer = () => {
           <img
             src="/sigla_CCSI.png"
             alt="Logo Congresso"
+            loading="lazy"
             className="w-36 h-auto object-contain mx-auto md:mx-0"
           />
         </div>

@@ -92,6 +92,7 @@ export default function CarouselCircular() {
             <img
               src={person.image}
               alt={person.name}
+              loading="lazy"
               className="w-full h-full object-cover rounded-xl"
             />
 

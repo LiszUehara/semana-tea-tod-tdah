@@ -30,6 +30,7 @@ export default function Participante() {
         <div className="bg-white/40 rounded-2xl shadow-2xl flex flex-col md:flex-row items-center max-w-4xl w-full p-8 gap-8 border border-white/30 backdrop-blur-xl backdrop-saturate-150">
           <div className="flex-shrink-0 flex flex-col items-center">
             <img
+              loading="lazy"
               src={person?.image}
               alt={person?.name}
               className="w-56 h-56 rounded-full object-cover border-4 border-[#5F4235] shadow-lg mb-4"

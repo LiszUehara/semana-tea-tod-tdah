@@ -11,6 +11,7 @@ export default function Local() {
           src="/local.webp"
           alt="Local do evento"
           className="w-64 h-64 object-contain drop-shadow-xl"
+          loading="lazy"
         />
       </div>
 

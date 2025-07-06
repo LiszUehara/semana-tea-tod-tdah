@@ -6,6 +6,7 @@ export default function Lead() {
           src="/CCSI2025.png"
           alt="Logo Congresso"
           className="w-full h-auto object-contain"
+          loading="lazy"
         />
 
         <a

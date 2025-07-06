@@ -44,6 +44,7 @@ export default function Kit() {
               src="LogoSimbolo.png"
               alt="Ingresso"
               className="w-20 h-20 mx-auto mb-4 drop-shadow-lg"
+              loading="lazy"
             />
 
             <h3 className="text-xl font-bold text-white mb-2 uppercase tracking-wide">
