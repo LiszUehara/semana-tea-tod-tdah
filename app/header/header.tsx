@@ -78,12 +78,14 @@ export default function Header() {
           >
             FAQ
           </button>
-          <button
+          <a
             className="px-4 py-2 text-sm text-white hover:bg-yellow-900 bg-orange-600 shadow-lg rounded"
-            onClick={() => navigate("/ingressos")}
+            href={"https://www.sympla.com.br/evento/i-congresso-caririense-de-saude-integrada/3027154"}
+            target="_blank"
+            rel="noopener noreferrer"
           >
             INGRESSOS
-          </button>
+          </a>
         </nav>
 
         {/* MOBILE MENU ICON */}

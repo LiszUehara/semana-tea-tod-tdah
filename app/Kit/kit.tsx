@@ -2,29 +2,32 @@ export default function Kit() {
   const ingressos = [
     {
       title: "PASSAPORTE LOTE 0",
-      preco: "200,00",
-      parcelas: "12x 20,00",
+      preco: "271,40",
+      parcelas: "12x 28,10",
     },
     {
       title: "PASSAPORTE MEIA LOTE 0",
-      preco: "100,00",
-      parcelas: "12x 10,00",
+      preco: "135,70",
+      parcelas: "12x 14,05",
     },
     {
       title: "PASSAPORTE INGRESSO CNP",
       preco: "0,00",
       parcelas: null,
+      alert: true,
     },
+    /*
     {
       title: "INGRESSO SOMENTE PALESTRAS LOTE 0",
       preco: "100,00",
       parcelas: "12x 10,00",
     },
+    */
   ];
 
   return (
     <section
-      className="flex flex-col items-center justify-center min-h-screen bg-cover bg-center bg-no-repeat py-16 px-4"
+      className="flex flex-col items-center justify-center min-h-screen bg-cover bg-center bg-no-repeat  py-16 px-4"
       style={{ backgroundImage: "url('/images/bg-site_06.jpg')" }}
     >
       <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-12 text-white drop-shadow-lg tracking-wide font-arsenica">
@@ -46,23 +49,45 @@ export default function Kit() {
             <h3 className="text-xl font-bold text-white mb-2 uppercase tracking-wide">
               {item.title}
             </h3>
-            <p className="text-sm text-white/80 mb-1">🎟️ Acesso a dois dias de evento</p>
+            <p className="text-sm text-white/80 mb-1">
+              🎟️ Acesso a dois dias de evento
+            </p>
             <p className="text-sm text-white/80 mb-1">🎁 Welcome kit</p>
-            <p className="text-sm text-white/80 mb-1">📜 Certificado de participação</p>
+            <p className="text-sm text-white/80 mb-1">
+              📜 Certificado de participação
+            </p>
 
-            <p className="text-2xl text-yellow-300 font-bold mt-4">{item.preco}</p>
+            <p className="text-2xl text-yellow-300 font-bold mt-4">
+              {item.preco}
+            </p>
             {item.parcelas && (
               <p className="text-sm text-yellow-200 mb-3">{item.parcelas}</p>
             )}
 
-            <a
-              href="https://wa.me/5588994377675"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-6 inline-block bg-yellow-600 text-white font-semibold py-2 px-4 rounded-full hover:bg-yellow-700 shadow-md hover:shadow-lg transition-all"
-            >
-              Adquira já
-            </a>
+            {item.alert ? (
+              <a
+                onClick={() =>
+                  alert(
+                    "Contate a equipe organizadora do evento para adquirir o ingresso."
+                  )
+                }
+                href="https://wa.me/55889999139972"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-6 inline-block bg-yellow-600 text-white font-semibold py-2 px-4 rounded-full hover:bg-yellow-700 shadow-md hover:shadow-lg transition-all"
+              >
+                Adquira já
+              </a>
+            ) : (
+              <a
+                href="https://www.sympla.com.br/evento/i-congresso-caririense-de-saude-integrada/3027154"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-6 inline-block bg-yellow-600 text-white font-semibold py-2 px-4 rounded-full hover:bg-yellow-700 shadow-md hover:shadow-lg transition-all"
+              >
+                Adquira já
+              </a>
+            )}
           </div>
         ))}
       </div>

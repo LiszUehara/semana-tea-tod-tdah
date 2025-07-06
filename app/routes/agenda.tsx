@@ -14,7 +14,9 @@ export default function AgendaPage() {
           backgroundRepeat: "no-repeat",
         }}
       >
-        {/* Card 1 */}
+        <h1 className="text-4xl font-bold text-orange-500 mb-8 drop-shadow">
+          AGENDA
+        </h1>
         <div className="text-card-foreground shadow-sm max-w-[500px] p-5 w-full flex flex-col items-start justify-center bg-transparent border gap-4 border-[#ffd5b1] rounded-lg mb-8">
           <span className="w-full text-orange-50 bg-orange-800 text-sm px-4 py-2 rounded-lg">
             Trilha: <b>Palco Principal</b>

@@ -8,7 +8,7 @@ import Evento from "~/evento/evento";
 import Faq from "~/faq/faq";
 import Footer from "~/footer/footer";
 import Lead from "~/leaders/lead";
-import Kit from "~/kit/kit";
+import Kit from "~/Kit/kit";
 import Local from "~/local/local";
 import Agenda from "./agenda";
 

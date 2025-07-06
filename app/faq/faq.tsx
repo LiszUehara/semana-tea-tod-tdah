@@ -21,7 +21,7 @@ export default function Faq() {
     "Sim, você pode comprar quantos ingressos quiser no mesmo pedido.",
     "Sim, estudantes têm direito à meia entrada mediante comprovação.",
     "Aceitamos cartão de crédito, PIX e boleto bancário.",
-    "Entre em contato conosco pelo WhatsApp",
+    "Entre em contato conosco pelo WhatsApp +55 (88) 9 99913-9972",
   ];
 
   const toggle = (index: number): void => {
@@ -31,8 +31,8 @@ export default function Faq() {
   return (
     <section
       id="faq"
-      className="py-20 bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: "url('/images/bg-site_07.jpg')" }} 
+      className="flex flex-col items-center justify-center min-h-screen bg-cover bg-center bg-no-repeat py-16 px-4"
+      style={{ backgroundImage: "url('/images/bg-site_07.jpg')" }}
     >
       <div className="max-w-3xl mx-auto px-6 py-10 rounded-2xl border border-white/30 backdrop-blur-md bg-white/10 shadow-2xl">
         <h2 className="text-5xl md:text-6xl font-extrabold text-white mb-4 text-center drop-shadow-xl">

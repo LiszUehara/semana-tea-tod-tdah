@@ -82,11 +82,11 @@ export default function CarouselCircular() {
       </h2>
 
       {/* Carousel */}
-      <div className="flex flex-row justify-center gap-6 w-full max-w-7xl overflow-x-auto scrollbar-thin scrollbar-thumb-yellow-800 scrollbar-track-transparent pb-4">
+      <div className="flex flex-row justify-center gap-4 sm:gap-6 w-full max-w-full md:max-w-7xl overflow-x-auto scrollbar-thin scrollbar-thumb-yellow-800 scrollbar-track-transparent pb-4">
         {visiblePeople.map((person, idx) => (
           <div
             key={`${person.name}-${idx}`}
-            className="relative w-64 h-96 overflow-hidden shadow-lg transition-all duration-500 ease-in-out rounded-xl group border border-yellow-800"
+            className="relative w-56 h-80 sm:w-64 sm:h-96 md:w-72 md:h-[28rem] overflow-hidden shadow-lg transition-all duration-500 ease-in-out rounded-xl group border border-yellow-800 flex-shrink-0 bg-white/70 backdrop-blur"
           >
             {/* Imagem */}
             <img
@@ -95,17 +95,17 @@ export default function CarouselCircular() {
               className="w-full h-full object-cover rounded-xl"
             />
 
-            {/* Camada glass que desaparece no hover */}
-            <div className="absolute inset-0 bg-white/30 backdrop-blur-md transition-opacity duration-500 group-hover:opacity-0 rounded-xl" />
+            {/* Camada glass que desaparece no hover (menos opaca no mobile) */}
+            <div className="absolute inset-0 bg-white/40 backdrop-blur-md transition-opacity duration-500 group-hover:opacity-0 rounded-xl sm:bg-white/30" />
 
             {/* Informações e botão */}
-            <div className="absolute bottom-0 w-full bg-gradient-to-t from-yellow-900 to-transparent p-4 text-center">
-              <div className="text-white font-semibold text-lg mb-2">
+            <div className="absolute bottom-0 w-full bg-gradient-to-t from-yellow-900/90 to-transparent p-3 sm:p-4 text-center">
+              <div className="text-white font-semibold text-base sm:text-lg mb-2 drop-shadow">
                 {person.name}
               </div>
               <button
                 onClick={() => navigate(`/participante/${person.id}`)}
-                className="mt-2 px-4 py-2 text-sm font-bold rounded-full bg-yellow-700 hover:bg-yellow-800 text-white transition opacity-0 group-hover:opacity-100"
+                className="mt-2 px-3 py-2 sm:px-4 sm:py-2 text-xs sm:text-sm font-bold rounded-full bg-yellow-700 hover:bg-yellow-800 text-white transition opacity-100 group-hover:opacity-100"
               >
                 Ver detalhes
               </button>
