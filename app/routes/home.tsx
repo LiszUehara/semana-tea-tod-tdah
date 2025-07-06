@@ -29,8 +29,10 @@ export default function Home() {
       <Banner />
       <HeadlineVerticalLoop/>
       <Evento />
+      {/*
       <Carousel />
       <Agenda />
+      */}
       <Lead />
       <Local/>
       <Kit />

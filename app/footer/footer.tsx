@@ -11,7 +11,7 @@ const Footer = () => {
         {/* Texto */}
         <div className="flex-1">
           <p>
-            Todos os direitos reservados © 2026 Congresso Caririense de Saude Integrada, TEA, TOD E TDAH. 
+            Todos os direitos reservados © 2025 Congresso Caririense de Saude Integrada. 
           </p>
         </div>
 
