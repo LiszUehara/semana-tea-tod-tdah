@@ -11,6 +11,7 @@ import Lead from "~/leaders/lead";
 import Kit from "~/Kit/kit";
 import Local from "~/local/local";
 import Agenda from "./agenda";
+import CNP from "~/cnp/cnp";
 
 
 
@@ -32,9 +33,11 @@ export default function Home() {
       {/*
       <Carousel />
       <Agenda />
-      */}
       <Lead />
-      <Local/>
+      */}
+
+      <Local />
+      <CNP />
       <Kit />
       <Faq />
       <Footer />
